@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.logo {
+    width: 200;
+    height: 80px;
+}
+.cabecalho {
+    width: 100%;
+    height: 100px;
+    background-color: ghostwhite;
+    display: flex;
+}
+.cabecalho p{
+    margin-top: 40px;
+    margin-left: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn {
+    background-color: red;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    margin-left: 80%;
+    animation-name: atencao;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    border-radius: 30%;
+}
+    .btn:hover{
+        background-color: darkred;
+}
+.rico {
+    top: 10px;
+    position: relative;
+    display: flex;
+    height: 300px;
+    width: 50%;
+}
+
+h1 {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 10px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: blue;
+}
+.um {
+    display: flex;
+}
+.sla {
+    flex-wrap: wrap;
+    position: relative;
+    top: 200px;
+    left: -250px;
+    height: 100px;
+    width: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 40px 40px 40px 40px;
+    background-color: red;
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.motivos {
+    height: 400px;
+}
+.divdiv {
+    text-align: center;
+}
+.comentarios {
+    background-color: rgba(128, 128, 128, 0.187);
+    height: 200px;
+    border-radius: 16px 16px 16px 16px;
+    margin: 10px 10px 10px 10px;
+}
+h2 {
+    margin-left: 20px;
+    position: relative;
+    top: 15px;
+}
+.pessoa {
+    height: 50px;
+    position: relative;
+    top: 15px;
+}
+.omeario {
+    position: relative;
+    left: 50px;
+    top: -15px;
+}
+.add {
+    background-color: white;
+    height: 30px;
+    color: rgba(128, 128, 128, 0.434);
+    border-radius: 16px ;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.add p{
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+.rodape {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+}
+.rodamao {
+    display: flex;
+    align-items: end;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    .cabecalho p{
+        margin-left: 0;
+    }
+    .sla {
+        left: -100px;
+    }
+
+}
+
+@media (max-width: 676px) {
+    .sla {
+        left: -100px;
+        top: 250px;
+    }
+    .motivos {
+        height: 300px;
+        position: relative;
+        top: 40px;
+    }
+    .comentarios {
+        position: relative;
+        top: 35px;
+    }
+}
+
+@media (max-width: 596px) {
+    .sla {
+        left: -100px;
+        top: 300px;
+        height: 60px ;
+    }
+
+}
+@media (max-width: 525px) {
+    .sla {
+        left: -100px;
+        top: 325px;
+        height: 40px;
+    }
+    .motivos {
+        height: 200px;
+        position: relative;
+        top: 50px;
+    }
+    .comentarios {
+        position: relative;
+        top: 35px;
+    }
+    .rico {
+        height: 250px;
+    }
+}
+@media (max-width: 340px) {
+    .cabecalho {
+        width: 100%;
+        height: 100px;
+        background-color: ghostwhite;
+        display: block;
+    }
+    .cabecalho p {
+        position: relative;
+        top: -40px;
+    }
+    .motivos {
+        height: 150px;
+        position: relative;
+        top: 50px;
+    }
+    .rico {
+        height: 200px;
+    }
+}
+
+
+@keyframes pisca {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: blue;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+
+@keyframes atencao {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
